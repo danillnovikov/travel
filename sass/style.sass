@@ -1,3 +1,8 @@
+=btn_hover
+    &:hover
+        background-color: gray
+        transition: 0.5s all
+
 *
     box-sizing: border-box
     padding: 0
@@ -67,6 +72,8 @@ button
     font-size: 16px
     line-height: 21px
     color: #FFFFFF
+    cursor: pointer
+    +btn_hover
 
 .preview
 
@@ -92,7 +99,6 @@ button
     form
         position: relative
         margin-top: 46px
-        // padding: 46px 0 33px 0
         input
             display: block
             width: 892px
@@ -119,3 +125,75 @@ button
             font-weight: 500
             font-size: 24px
             color: #FFFFFF
+            cursor: pointer
+            +btn_hover
+
+.steps
+    min-height: 350px
+    &_title
+        margin-top: 80px
+        font-family: 'Red Hat Text'
+        font-weight: 500
+        font-size: 40px
+        line-height: 53px
+        text-align: center
+        color: #F2785C
+        text-transform: uppercase
+    &_blocks
+        display: flex
+        justify-content: space-between
+        margin-top: 40px
+        margin-left: 131px
+        height: 154px
+        width: 1177px
+    &_square
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100px
+        height: 100px
+        background-color: #F2785C
+        border-radius: 16px
+        text-align: center
+        margin: 0 auto
+    &_descr
+        margin-top: 30px
+        font-family: 'Aleo'
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        color: #0D606F
+
+.destinations
+    min-height: 1042px
+    &_title
+        font-family: 'Red Hat Text'
+        font-weight: 500
+        font-size: 40px
+        line-height: 53px
+        color: #F2785C
+        text-align: center
+    img
+        display: block
+        margin: 0 auto
+        margin-top: 46px
+        width: 800px
+        height: 800px
+        border-radius: 16px
+    &_btn
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 84px
+        background: #0D606F
+        width: 228px
+        height: 60px
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16)
+        border-radius: 10px
+        font-family: 'Red Hat Text'
+        font-weight: 500
+        font-size: 24px
+        color: #FFFFFF
+        .next
+            padding-right: 10px
