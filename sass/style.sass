@@ -12,7 +12,7 @@
 .wrapper
     margin: 0 auto
     max-width: 1440px
-    min-height: 1500px
+    // min-height: 1500px
     position: relative
 
 header
@@ -197,3 +197,51 @@ button
         color: #FFFFFF
         .next
             padding-right: 10px
+
+.stories
+    min-height: 1270px
+
+    &_title
+        margin-top: 70px
+        font-family: 'Red Hat Text'
+        font-weight: 500
+        font-size: 40px
+        color: #F2785C
+        text-align: center
+    &_bl
+        background: url('../img/bg/stories_bg.jpg') center (center / cover) no-repeat
+    &_blocks
+        display: flex
+        flex-direction: column
+        margin-top: 40px
+        margin-bottom: 30px
+        min-height: 1270px
+        background: rgba(255, 255, 255, 0.7)
+
+    &_block
+        display: flex
+        justify-content: center
+        margin-top: 30px
+
+        img
+            border-radius: 16px
+            filter: drop-shadow(0px 4px 4px #0D606F)
+    &_descr
+        width: 760px
+        margin-left: 40px
+    &_subtitle
+        font-family: 'Aleo'
+        font-weight: 400
+        font-size: 35px
+        line-height: 42px
+        color: #0D606F
+    &_text
+        font-family: 'Aleo'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        color: #0D606F
+        margin-top: 24px
+    &_btn
+        margin-top: 40px
